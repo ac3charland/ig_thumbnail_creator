@@ -15,7 +15,7 @@ fn main() {
 
     // Specify the input and output file paths
     let input_path = &args[1];
-    let fallback_output_dir = tilde("~/Desktop").to_string();
+    let fallback_output_dir = tilde(".").to_string();
     let output_dir = match args.get(2) {
         Some(output_arg) => output_arg,
         None => &fallback_output_dir,
